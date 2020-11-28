@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Niconne&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+          .slider {
+            /* height: 500px; */
+            width: 100%;
+            /* background-color: orange; */
+            /* box-shadow: 1px 1px 1px 4px gray; */
+        }
+        
+        .container-fluid {
+            height: auto;
+            /* background-color: rgba(246, 171, 182, 0.6); */
+        }
+        
+        .navbar {
+            /* height: 70px; */
+            /* background-color: rgba(246, 171, 182, 0.6); */
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .togl{
+    
+    background-color: #f6abb6;
+    border: 1px solid white;
+    color: rgb(255, 255, 255) !important;
+    background-image: linear-gradient(#f6abb6, #f6abb6, #f6abb6) !important;
+    opacity: 1;
+            
+}
+        .main {
+            height: 38px;
+            /* margin-top: 17px;
+            margin-left: 7px; */
+        }
+        
+        p {
+            color: black;
+            /* line-height: 180px; */
+            /* padding-left: 20px; */
+            font-family: Niconne;
+            font-size: 15px;
+        }
+        
+        .nv a {
+            color: black;
+        }
+        
+        .li1 {
+            padding: 15px;
+            font-family: Niconne;
+            font-size: 25px;
+        }
+        /* dropdown */
+        .dropdown-menu {
+         background-color: white;
+         text-align: center;
+         font-size: 20px;
+       
+     }
+     .dropdown-menu a{
+      text-decoration: none;
+     }
+     .dropdown-menu a:hover{
+      background-color:#f6abb6;
+      color: black;
+      font-weight: bold;
+     }
+     /* dropdown */
+        /* slider */
+        
+        .carousel-inner img {
+            height: 100%;
+            width: 100%;
+        }
+        
+        h3 {
+            font-family: roboto;
+            font-size: 30px
+        }
+        
+        p {
+            font-size: 25px;
+            font-family: Niconne;
+            color: black;
+        }
+        .crl-txt{
+            height: 100px;
+            background-color:rgba(238, 227, 231,.4);
+           line-height: 1.4;
+           margin-top: -25px;
+        }
+         /* slider */
+         /* beauty image section start */
+        #con {
+            height: auto;
+            /* background-color: #f4b6c2; */
+        }
+        /* heading 1 */
+        h1 {
+            font-family: Niconne;
+            font-size: 50px;
+            text-shadow: 1px 4px 4px rgb(87, 85, 85);
+        }
+        /* heading 1 */
+        /* first img row start */
+        .imgrw {
+            height: auto;
+            /* border: 1px solid gray; */
+        }
+        
+        .colimg {
+            /* border: 1px solid black; */
+            /* width: 100%; */
+        }
+       .beautysec{
+           width: auto;
+           height: auto;
+           position: relative;
+           padding: 90PX;
+       }
+       .beautysec::before{
+           content: "";
+           position: absolute;
+           top: 0%;
+           bottom: 0%;
+           left: 0;
+           right: 0;
+           z-index: -1;
+           background: linear-gradient(160deg, #f4b6c2 55%, #fff 0%);
+       }
+       .card{
+            transition: 0.5s ease;
+       }
+       .card-header{
+           
+           font-size: 15px;
+           font-family: roboto;
+           font-weight: bold;
+           background-color: #fff!important ;
+           padding: 25px 9!important;
+           text-shadow: 1px 1px 2px rgb(87, 85, 85);
+       }
+       .card-header:hover{
+          transform: translateZ(20px);
+       }
+       .rate{
+           font-size: 25px;
+           /* color: #f6abb6; */
+           font-weight: bold;
+       }
+       .card-footer{
+           background: #fff!important;
+           padding: 10px 0px!important;
+       }
+       .card-footer {
+           border: 1px solid #f6abb6;
+           border-radius: 30px;
+           margin:0 5px; 
+           padding: 12 35px;
+            outline: none;
+           color: #000;
+           font-size: 20px;
+           /* font-weight: 600; */
+           line-height: 1.4;
+           text-align: center;
+       }
+       .card-footer:hover{
+        color: #fff; 
+        background-color: #f4b6c2!important; 
+        text-decoration: none; 
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+       }
+       .card:hover{
+           transform: translateY(-20px);
+           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+           
+       }
+       .rate:hover{
+           color: white;
+       }
+         /* first img row end */
+         /* skin care collection start */
+         /* 2nd row start */
+         .skin-sec{
+           width: auto;
+           height: auto;
+           position: relative;
+           padding: 40Px;
+           /* background-color:#eee3e7; */
+       }
+       .skin-sec::before{
+           /* content: "";
+           position: absolute;
+           top: 0%;
+           bottom: 0%;
+           left: 0;
+           right: 0;
+           z-index: -1; */
+           background-color:#ead5dc ;
+       }
+       .card-skin:hover{
+           transform: translateY(20px);
+           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+           
+       }
+        /* skin care collection start */
+         /* 2nd row start */
+         /* ****client view**** */
+        .cient-view{
+               font-family: roboto;
+               font-size: 20px;
+        }
+        .fb{
+            width: auto;
+            height: auto;
+            padding: 80px 0;
+
+        }
+        .box{
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow:0 5px 10px 0 rgba(0, 0, 0, 0.3) ;
+            border-radius: 2px;
+            transition: 0.3s ease;
+        }
+        .box:hover{
+            background: #eec9d2;
+        }
+        .cro-fb{
+            position: absolute;
+            right: 0;
+            bottom: -60px!important;
+        }
+        .cro-fb li{
+            background-color: #f6abb6!important;
+        }
+        .box a{
+            position: relative;
+        }
+        .box a img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .box a::after{
+            content: "\f10d";
+            font-family: FontAwesome;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: linear-gradient(to right, #eee3e7 0%, #e6a5d2 0%, #f4b6c2 100%);
+            color: white;
+            position: absolute;
+            top: 120%;
+            left: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box h1{
+            font-size: 22px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .box p{
+            font-size: 19px;
+
+        }
+         /* ****client view**** */
+          /* ****footer work**** */
+          .ftr-sec{
+              width: 100%;
+              height: auto;
+              background-color: #f6abb6;
+              /* padding: 40px 0 20px 0px; */
+              margin-top: 10px;
+              margin-bottom: -17px;
+          }
+        .con-ftr{
+            height: auto;
+        /* background-color: #000; */
+        }
+        .row-ftr h1{
+            font-size: 28px;
+        }
+        .row-ftr ul{
+            text-decoration: none;
+            list-style: none;
+        }
+        .row-ftr ul li{
+            font-size: 18px;
+            font-weight: 400;
+            text-shadow: 1px 2px 3px rgb(87, 85, 85);
+        }
+        .ftr-img img{
+            height: 150px;
+            margin-top: -5px;
+        }
+        .img1{
+            height: 30px;
+            margin-top: -5px;
+        }
+
+       .qimg{
+           height: 38px;
+           width: 45px;
+       }
+        .col-ftr p{
+            font-size: 15px;
+            font-family: roboto;
+        }
+ /* ****footer work**** */
+ /* display none search bar */
+ .srch-bar {
+            height: 35px;
+        }
+        .cross-icon {
+            height: 200px;
+            background-color: rgba(238, 227, 231,0);
+            display: none;
+           position: relative;
+           top: 95px;
+           z-index: 10;
+           
+        }
+        .cross-icon img{
+            height: 40px;
+        }
+        .cross-bar {
+            height: 40px;
+        }
+        .btncross{
+           border: none;
+           border-radius: 100%;
+           background-color:rgba(238, 227, 231,0) ;
+        }
+        #cross-input{
+         height: 100px;
+         width: 90%;
+         background-color:rgba(238, 227, 231,.2) ;
+         border: 1px solid rgba(238, 227, 231,.2);
+        }
+        /* display none search bar */
+ /* media query imp */
+   @media(max-width: 768px){
+     .nav-item{
+         text-align: center!important;
+         /* background-color: rgba(238, 227, 231); */
+     };
+     .middle-card{
+         margin: 40px 0;
+     };
+    };
+ /* media query imp */
+    </style>
+</head>
+<body>
+    <!-- search bar script  -->
+    <!-- <script>
+        $(document).ready(function(){
+           $(".btn").click(function(){
+         $(".srch-bar").hide();
+         $(".cross-icon").show();
+           });
+           $(".btncross").click(function(){
+            $(".cross-icon").hide();
+            $(".srch-bar").show();
+           });
+        });
+    </script> -->
+    <!-- search bar script  -->
+   <!-- slider start-->
+   <section class="slider">
+    <div id="carouselId" class="carousel slide " data-ride="carousel">
+        <div class="row">
+            <div class="container-fluid ">
+                <!-- nabar start -->
+                <nav class="navbar navbar-expand-sm navbar-white fixed-top ">
+                    <!-- <div class="container-fluid"> -->
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="" class="main">
+                        <p>f/beauty</p>
+                    </a>
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon togl "></span></button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                        <!-- nav bar -->
+                        <ul class="navbar-nav nv">
+                            <!-- <li class="nav-item active li1">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li> -->
+                            <li class="nav-item li1">
+
+                                <a class="nav-link " href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item li1">
+                                <a class="nav-link " href="contact.html">Contact Us</a>
+                            </li>
+                        
+                            <li class="nav-item li1 dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-value="products"href="products">Products<span class="caret"></span></a> 
+                                <ul class="dropdown-menu dropdown-collapse" data-toggle="collapse">
+                                    <li><a href="product.html">Eye Beauty Kits</a></li>
+                                    <li><a href="#">Face Beauty kits</a></li>
+                                    <li><a href="#">Nails & Tools</a></li>
+                                    <li><a href="#">Hairs </a></li>
+                                    <li><a href="#">Lipsticks Collection</a></li>
+                                    <li><a href="#">Skin care </a></li>
+                                </ul>   
+                            </li>
+                            <li class="nav-item li1">
+                                <a class="nav-link " href="faqs.html">FAQs</a>
+                            </li>
+                            <li class="nav-item li1">
+                                <a class="nav-link " href="dealer.html">Dealers</a>
+                            </li>
+                            <li class="nav-item li1">
+                                <a class="nav-link " href="#">Buy Now</a>
+                            </li>
+                            <li class="nav-item li1">
+                                <button class="btn " type="srch"><a href="#"><img src="images/srch.png" 
+                                    class="image-fluid srch-bar" alt="">
+                                        </button></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- </div> -->
+
+                </nav>
+                <div class="container-fluid cross-icon">
+                 <input type="text" id="cross-input" placeholder="Search Here" value="">
+                 <button class="btncross" type="cross"><a href="#"><img src="images/cross2.png" class="img-fluid" alt=""></a></button>
+                </div>
+
+                <!-- navbar end-->
+                <!-- <strong class="text-left">F/Beauty</strong> -->
+                
+
+                <!-- slider start-->
+            </div>
+            
+        </div>
+        
+        <ul class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <img src="images/image1.jpg" alt="First slide" height="300px" width="1100px">
+                <div class="carousel-caption crl-txt ">
+                    <h3>F/Beauty</h3>
+                    <p>Makeup is an art & every woman is an artist</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image4.jpg" alt="Second slide" height="300px" width="1100px">
+                <div class="carousel-caption crl-txt ">
+                    <h3>Dear Girls</h3>
+                    <p>You are Pretty by Nature but You may Look More Pretty</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image5.jpg" alt="Third slide" height="300px" width="1100px">
+                <div class="carousel-caption crl-txt ">
+                    <h3>F/beauty</h3>
+                    <p>Yes we have a tools who Makes You Attractive For EeveryOne</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+</section>
+<!-- slider end -->
+<!-- heading1 --> 
+
+<section class="beautysec">
+<div class="container" id="con">
+    <h1 class="text-left  pt-2">Collections Of Beauty Kits</h1>
+    <!-- heading1 -->
+    <!-- beauty images  section start -->
+    <div class="row imgrw mt-3">
+        <div class="col-sm-12 col-md-4 c0l-lg-4  colimg">
+            <div class="card text-center">
+                <div class="card-header">Eyeliner Mascara & Eyelashes</div>
+                <div class="card-body">
+              <img src="images/cbimg5.png" style="height:150px ;" class="img-fluid" alt="">
+                </div>
+                <div class="card-footer">More Than <span class="rate">200</span> Brands</div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-4 c0l-lg-4 colimg">
+            <div class="card text-center middle-card">
+                <div class="card-header">Best Foundations & BB Creams </div>
+                <div class="card-body">
+              <img src="images/cbimg9.png" style="height: 150px;"  class="img-fluid" alt="">
+                </div>
+                <div class="card-footer">More Than <span class="rate">150</span> Brands</div>
+              </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 c0l-lg-4 colimg">
+            <div class="card text-center">
+                <div class="card-header">Best Beauty Kits & Boxes</div>
+                <div class="card-body">
+              <img src="images/kits4.png" style="height: 150px;"  class="img-fluid"  alt="">
+                </div>
+                <div class="card-footer">More Than <span class="rate">300</span> Brands</div>
+              </div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="skin-sec ">
+<div class="container " id="con">
+    <!-- beauty images  section end-->
+    <!-- heading2 -->
+    <h1 class="text-left  pt-2">Collections Of Skin Care</h1>
+    <!-- heading2 -->
+    <!-- skincare images  section -->
+    <div class="row imgrw mt-3">
+        <div class="col-sm-12 col-md-4 c0l-lg-4  colimg">
+            <div class="card card-skin  text-center">
+                <div class="card-header">Skin Care Facial & tools</div>
+                <div class="card-body">
+              <img src="images/skimg.jpg" style="height: 200px;" class=" card-img-center img-fluid"  alt="">
+                </div>
+                <div class="card-footer">More Than <span class="rate">500</span> Brands</div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-4 c0l-lg-4 colimg">
+            <div class="card  card-skin middle-card text-center">
+                <div class="card-header">Herbal Extensional</div>
+                <div class="card-body">
+              <img src="images/hrblimg1.png" style="height: 200px;" class="img-fluid"  alt="">
+                </div>
+                <div class="card-footer">More Than <span class="rate">200</span> Brands</div>
+              </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 c0l-lg-4 colimg">
+            <div class="card  card-skin text-center">
+                <div class="card-header">Hair Colors & Extensional</div>
+                <div class="card-body">
+              <img src="images/hskimg2.png" style="height: 200px;" class="img-fluid"  alt="">
+                </div>
+                <div class="card-footer">More Than <span class="rate">400</span> Brands</div>
+              </div>
+        </div>
+    </div>
+</div>
+</section>
+    <!-- skincare images  section -->
+
+<!-- client feedback -->
+<div class="container">
+<section class="fb">
+    <div class="container text-center" id="con">
+        <h1 class="text-center  pt-2"> Our Clients Feedback </h1>
+        <p class="text-capitalize  cient-view"> Our clients says</p>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators cro-fb">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           <div class="row">
+               <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                   <div class="box">
+                       <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                       <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                            </p>
+                            <h1>F/beauty</h1>
+                   </div>
+               </div>
+
+               <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                <div class="box">
+                    <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                    <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                         </p>
+                         <h1>F/beauty</h1>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                <div class="box">
+                    <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                    <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                         </p>
+                         <h1>F/beauty</h1>
+                </div>
+            </div>
+           </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                    <div class="box">
+                        <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                        <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                             </p>
+                             <h1>F/beauty</h1>
+                    </div>
+                </div>
+ 
+                <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                 <div class="box">
+                     <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                     <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                          </p>
+                          <h1>F/beauty</h1>
+                 </div>
+             </div>
+ 
+             <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                 <div class="box">
+                     <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                     <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                          </p>
+                          <h1>F/beauty</h1>
+                 </div>
+             </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                    <div class="box">
+                        <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                        <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                             </p>
+                             <h1>F/beauty</h1>
+                    </div>
+                </div>
+ 
+                <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                 <div class="box">
+                     <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                     <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                          </p>
+                          <h1>F/beauty</h1>
+                 </div>
+             </div>
+ 
+             <div class="col-sm-12 col-md-4 col-lg-4 colfb">
+                 <div class="box">
+                     <a href=""><img src="images/bg.jpg" alt="" class="img-fluid img-thumbnail"></a>
+                     <p class="m-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Error eaque perferendis animi, iure veritatis dignissimos eius id sint 
+                          </p>
+                          <h1>F/beauty</h1>
+                 </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
+      
+</section>
+</div>  
+<!-- client feedback -->
+<!-- footer work start -->
+<footer class="ftr-sec">
+<div class="container con-ftr">
+    <div class="row row-ftr">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-ftr">
+            <div>
+                <h1>Companies Links</h1>
+                <ul>
+                    <li>Kryalon</li>
+                    <li>Christain</li>
+                    <li>LakeMe</li>
+                    <li>Loral</li>
+                    <li>Glamours</li>
+                    <li>Huda Beauty</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-ftr">
+            <div>
+                <h1>our brands verification</h1>
+                <p>Dear costumer we have all verified products by saller custom</p>
+                <div class="d-flex qimg">
+                    <img src="images/ftrimg3.png" class="img-fluid" alt="">
+                    <img src="images/ftrimg2.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 col-ftr">
+            <div>
+                <h1>links where you may contact to us </h1>
+                <div class="ftr-img ">
+                  <img src="images/social.png"  alt="" class="img-fluid">
+                  
+                </div>
+                <div class=" d-flex">
+                    <img src="images/mail.png" alt="" class="img-fluid img1">
+                    <p class="justify-content-end">:f/beauty123@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-3 text-center">
+       <p> copyright &copy 2020</p>
+    </div>
+</div>
+</footer>
+<!-- footer work start -->
+<!-- script tag -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- script tag -->
+      <!-- search bar script  -->
+      <script>
+        $(document).ready(function(){
+           $(".btn").click(function(){
+         $(".srch-bar").hide();
+         $(".cross-icon").show();
+           });
+           $(".btncross").click(function(){
+            $(".cross-icon").hide();
+            $(".srch-bar").show();
+           });
+        });
+    </script>
+    <!-- search bar script  -->
+</body>
+</html>
